@@ -24,9 +24,23 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
+                text="Support Group",
+                url=f"https://t.me/LOVELYAPPEAL",
+            ),
+            InlineKeyboardButton(
+                text="Update Channel",
+                url=f"https://t.me/ABOUTVEDMAT",
+            ),
+        ],  
+        [
+            InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
-            )
+            ),
+            InlineKeyboardButton(
+                text="Add Lovely",
+                url=f"https://t.me/LOVELYR_OBOT?startgroup=true",
+            ),
         ],
     ]
     return buttons
@@ -45,8 +59,22 @@ def stream_markup(_, videoid):
         ],
         [
             InlineKeyboardButton(
+                text="Support Group",
+                url=f"https://t.me/LOVELYAPPEAL",
+            ),
+            InlineKeyboardButton(
+                text="Update Channel",
+                url=f"https://t.me/ABOUTVEDMAT",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            )
+            ),
+            InlineKeyboardButton(
+                text="Add Lovely",
+                url=f"https://t.me/LOVELYR_OBOT?startgroup=true",
+            ),
         ],
     ]
     return buttons
@@ -80,8 +108,22 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         ],
         [
             InlineKeyboardButton(
+                text="Support Group",
+                url=f"https://t.me/LOVELYAPPEAL",
+            ),
+            InlineKeyboardButton(
+                text="Update Channel",
+                url=f"https://t.me/ABOUTVEDMAT",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
+            ),
+            InlineKeyboardButton(
+                text="Add Lovely",
+                url=f"https://t.me/LOVELYR_OBOT?startgroup=true",
             ),
         ],
     ]
@@ -117,6 +159,16 @@ def slider_markup(
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v|{channel}|{fplay}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="Support Group",
+                url=f"https://t.me/LOVELYAPPEAL",
+            ),
+            InlineKeyboardButton(
+                text="Update Channel",
+                url=f"https://t.me/ABOUTVEDMAT",
             ),
         ],
         [
