@@ -38,8 +38,8 @@ def track_markup(_, videoid, user_id, channel, fplay):
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="Add Lovely",
-                url=f"https://t.me/LOVELYR_OBOT?startgroup=true",
+                text=_["S_B_5"],
+                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             ),
         ],
     ]
@@ -72,8 +72,8 @@ def stream_markup(_, videoid):
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
             InlineKeyboardButton(
-                text="Add Lovely",
-                url=f"https://t.me/LOVELYR_OBOT?startgroup=true",
+                text=_["S_B_5"],
+                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             ),
         ],
     ]
@@ -122,8 +122,8 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="Add Lovely",
-                url=f"https://t.me/LOVELYR_OBOT?startgroup=true",
+                text=_["S_B_5"],
+                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             ),
         ],
     ]
